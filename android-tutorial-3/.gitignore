@@ -1,0 +1,7 @@
+.externalNativeBuild/
+assets/
+gst-build-*/
+#src/org/freedesktop/gstreamer/GStreamer.java
+
+gst-android-build
+build
