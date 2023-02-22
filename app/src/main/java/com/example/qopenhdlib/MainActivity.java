@@ -24,12 +24,12 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
         SurfaceHolder sh = sv.getHolder();
         sh.addCallback(this);
 
-        //m_live_player.xx_init(this);
+        m_live_player.xx_init(this);
     }
 
 
     protected void onDestroy() {
-        //m_live_player.xx_finalize();;
+        m_live_player.xx_finalize();;
         super.onDestroy();
     }
 
@@ -37,7 +37,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
                                int height) {
         Log.d("GStreamer", "Surface changed to format " + format + " width "
                 + width + " height " + height);
-        //m_live_player.xx_set_surface_out(holder.getSurface());
+        m_live_player.xx_set_surface_out(holder.getSurface());
     }
 
     public void surfaceCreated(SurfaceHolder holder) {
@@ -46,7 +46,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback {
 
     public void surfaceDestroyed(SurfaceHolder holder) {
         Log.d("GStreamer", "Surface destroyed");
-        //m_live_player.xx_remove_surface_out();;
+        m_live_player.xx_remove_surface_out();;
     }
 
 }
