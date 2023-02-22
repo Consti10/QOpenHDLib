@@ -14,4 +14,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "QOpenHDLib"
 include ':app'
-//include ':android-tutorial-3'
+include ':android-tutorial-3'

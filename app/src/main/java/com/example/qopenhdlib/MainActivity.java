@@ -6,11 +6,11 @@ import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
-import android.os.Bundle;
+import org.freedesktop.gstreamer.tutorials.tutorial_3.GstLivePlayer;
 
 public class MainActivity extends Activity implements SurfaceHolder.Callback {
 
-    //private final GstLivePlayer m_live_player=new GstLivePlayer();
+    private final GstLivePlayer m_live_player=new GstLivePlayer();
 
     // Called when the activity is first created.
     @Override
